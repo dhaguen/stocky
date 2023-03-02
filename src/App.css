@@ -3,18 +3,82 @@
 }
 
 .navbar {
-  display: grid;
-  grid-template-columns: 3fr 7fr 4fr 1fr 1fr 1fr;
-  grid-template-rows: 90px;
-
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  align-items: center;
+  height: 90px;
+  background-color: white;
   position: sticky;
-  top: 0px;
+  top: 0;
+  border: 1px solid rgb(139, 34, 34);
+}
+
+.navbar-main-wrapper {
+  display: flex;
+  padding-right: 30px;
+}
+
+.navbar-browse {
+  margin: 0 4px;
+}
+
+.item-logo {
+  display: flex;
+  width: 205px;
+  height: 90px;
+  /* border: 1px solid rgb(139, 34, 34); */
+}
+
+.item-logo img {
+  margin: auto 40px;
+  width: 125px;
+  height: 24.875px;
+}
+
+.search-input-group {
+  display:flex;
+  height: 90px;
+  text-align: left;
+  padding-right: 2rem;
+}
+.search-input {
+  display:flex;
+  align-self: center;
+  padding-inline-start: 3rem;
+  height: 44px;
+  width: 613px;
+  padding-block: 3px 3px;
+}
+
+.search-input-icon {
+  display:flex;
+  align-self: center;
+  justify-content: center;
+  position: absolute;
+  z-index: 2;
+  width: 3em;
+  height: 3em;
+}
+
+.search-input-icon-svg {
+  align-self: center;
+  width:18px;
+  height:18px;
+}
+
+.item {
+  display: flex;
+  padding: 0px;
+  height: 90px;
+  
+  background-color: rgb(192, 197, 86);
+  border: 1px solid red;
 }
 
 .wrapper {
   display: grid;
   grid-template-rows: 48px 400px 28px 500px 392px;
-
   margin-top: 0px;
 }
 
@@ -27,7 +91,7 @@
 .banner {
   grid-column: 1/7;
   grid-row: 2/3;
-  background-color: greenyellow;
+  background-color: rgb(109, 47, 255);
 }
 
 .recommanedforyou {
@@ -51,9 +115,4 @@
 
 .container-main {
   background-color:white;
-}
-
-.item {
-  background-color: white;
-  border: 1px solid black;
 }
