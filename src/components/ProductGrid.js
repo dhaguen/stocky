@@ -17,7 +17,7 @@ function ProductCard({ product }) {
 
   return (
 
-    <div className="css-111hzm2-GridProductTileContainer">
+    <div className="css-ProductCard-component">
       <div className="css-pnc6ci">
         <div className="css-product-card">
           <div className="css-cpsonv">
@@ -73,10 +73,8 @@ function ProductGrid() {
 
   }, []);
 
-{/* <div className="css-product-grid"></div> */}
-
   return (
-    <div className="css-xzkzsa">
+    <div className="css-grid-component">
       {products.map((product) => (
         <ProductCard key={product.id} product={product} />
       ))}
